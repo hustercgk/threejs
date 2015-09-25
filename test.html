@@ -1,0 +1,21 @@
+<html>
+	<body>
+		<script type="text/javascript">
+		window.addEventListener('mousedown', fun, false);
+		function fun(e)
+		{
+			var div = document.getElementById('div1');
+			
+			x = e.clientX;
+			y = e.clientY;
+			var t = 200.22;
+			if(x > t)	
+			div.innerText = window.innerWidth;
+			// alter("alert("X coords: " + x + ", Y coords: " + y)");
+		}
+		</script>
+		<div id="div1">
+			hello
+		</div>
+	</body>
+</html>
